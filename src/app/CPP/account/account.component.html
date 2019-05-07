@@ -1,0 +1,16 @@
+<table>
+  <tr>
+      <th>SI.NO</th>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Cost</th>
+  </tr>
+  <tr *ngFor="let prd of products,let i=index">
+    <td>{{i+1}}</td>
+    <td>{{prd.id}}</td>
+    <td>{{prd.name}}</td>
+    <td>{{prd.description}}</td>
+    <td>{{prd.cost}}</td>
+  </tr>
+</table>
